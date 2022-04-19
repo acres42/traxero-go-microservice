@@ -134,7 +134,7 @@ func BearerAuthHeader(authHeader string) string {
 func main() {
 
 	//start the server
-	log.Println("Listing for requests at http://localhost:8000/")
+	log.Println("Listening for requests at http://localhost:8000/")
 	http.ListenAndServe(":8000", http.HandlerFunc(apihandler))
 	log.Fatal(http.ListenAndServe(":8000", nil))
 }
